@@ -35,6 +35,33 @@
     </aside>
     <article id="detpizza">
         <div id="DetPizzaDiv">
+            <div>
+                <h1 id="detpizzaNome">Nome Pizza</h1>
+                <p><img id="detpizzaimg" src="imagens/pizza.png" alt=""></p>
+                <p id="detpizzaDescricao">descricao</p>
+                <div>
+                    <h2>Tamanho</h2>
+                    <button value="pequena">pequena <span>100g</span></button>
+                    <button value="media">media <span>530g</span></button>
+                    <button value="grande">grande <span>830g</span></button>
+                </div>
+                <div id="detpizzaprecoDiv">
+                    <p id="detpizzapreco"> R$ 00.00</p>
+                    <div>
+                        <div onclick="tirarPizza()">-</div>
+                        <div id="detpizzasQuantidades">unid</div>
+                        <div onclick="colocarPizza()">+</div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            
+            <button>Adicionar ao carrinho</button>
+            <button onclick="CarcelarPizza()">Cancealar</button>
+            
+            
 
         </div>
     </article>

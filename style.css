@@ -13,6 +13,7 @@ nav {
     background-color: black;
     height: 40px;
 
+
 }
 
 nav h1 {
@@ -128,11 +129,54 @@ aside button {
 }
 
 #detpizza {
-    position: fixed;
-    height: 80vh;
-    width: 80vw;
-    background-color: red;
-    top: 10vh;
-    left: 10vw;
     display: none;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.278);
+    font-size: 1.2em;
+}
+
+#DetPizzaDiv {
+    position: fixed;
+    height: 90vh;
+    width: 80vw;
+    background-color: white;
+    top: 5vh;
+    left: 10vw;
+    display: block;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.234);
+}
+
+#DetPizzaDiv > div {
+    max-width: 55vw;
+    margin: auto;
+}
+
+#DetPizzaDiv img {
+    width: 35vw;
+    margin: auto;
+}
+
+#detpizzaprecoDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#detpizzaprecoDiv > div {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    background-color: rgba(197, 194, 194, 0.567);
+    padding: 2vh;
+    border-radius: 20px;
+}
+
+#detpizzaprecoDiv > div:hover {
+    cursor: pointer;
 }
