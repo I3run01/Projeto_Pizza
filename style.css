@@ -1,0 +1,138 @@
+@charset "UTF-08";
+
+body {
+    position: relative;
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+}
+
+nav {
+    padding-top: 10px;
+    grid-area: nav;
+    margin: 0;
+    background-color: black;
+    height: 40px;
+
+}
+
+nav h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main > div {
+    margin-top: 40px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.317);
+
+}
+
+main > div > div {
+    position: relative;
+}
+
+main  img {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+}
+
+
+main button {
+    font-size: 2em;
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    background-color: rgb(125, 251, 255);
+    border-radius: 50%;
+    border: none;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+main button:hover {
+    background-color: rgb(0, 196, 203);
+    cursor: pointer;
+    
+}
+
+main p {
+    margin: 20px;
+}
+
+aside {
+    position: absolute;
+    background-color: rgb(173, 255, 245);
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.284);
+    left: 20px;
+    top: 50px;
+    width: 80vw; height: 80vh;
+    display: none;
+}
+
+
+aside h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#conta {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+}
+
+#TotalDiv {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+
+
+}
+
+aside button {
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    font-size: 1.2em;
+    margin-left: 10%;
+}
+
+#lpizzas {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    padding: 15px;
+
+}
+
+#detpizza {
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    background-color: red;
+    top: 10vh;
+    left: 10vw;
+    display: none;
+}
