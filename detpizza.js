@@ -31,4 +31,5 @@ function CarcelarPizza() {
 function AdicionarCarrinho() {
     document.querySelector('#detpizza').style.display = 'none'
     document.querySelector('aside').style.display = 'block'
+    AsideFunction()
 }

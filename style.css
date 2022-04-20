@@ -76,7 +76,7 @@ main p {
 }
 
 aside {
-    display: block;
+    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -129,6 +129,7 @@ aside h1 {
 
 #lpizzas > div > div > div {
     margin: auto 10px auto 10px;
+    cursor: pointer;
 }
 
 #conta {
