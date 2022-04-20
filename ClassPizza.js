@@ -14,7 +14,8 @@ class Pizza {
     }
 
     DiminuirPizza() {
-        this.quantidade -- 
+        if(this.quantidade <= 0 ) this.quantidade = 0
+        else this.quantidade -- 
     }
 
 }

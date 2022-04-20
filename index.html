@@ -33,6 +33,7 @@
             <button>Finalizar a compra</button>
         </div>
     </aside>
+
     <article id="detpizza">
         <div id="DetPizzaDiv">
             <div>
@@ -48,9 +49,9 @@
                 <div id="detpizzaprecoDiv">
                     <p id="detpizzapreco"> R$ 00.00</p>
                     <div>
-                        <div onclick="tirarPizza()">-</div>
+                        <div value = 'nd' id="detpizzaprecoDivTP" onclick="tirarPizza(this.value)">-</div>
                         <div id="detpizzasQuantidades">unid</div>
-                        <div onclick="colocarPizza()">+</div>
+                        <div value = 'nd' id="detpizzaprecoDivCP" onclick="colocarPizza(this.value)">+</div>
                     </div>
 
                 </div>
@@ -58,11 +59,9 @@
             </div>
             
             
-            <button>Adicionar ao carrinho</button>
+            <button onclick="AdicionarCarrinho()">Adicionar ao carrinho</button>
             <button onclick="CarcelarPizza()">Cancealar</button>
             
-            
-
         </div>
     </article>
 
