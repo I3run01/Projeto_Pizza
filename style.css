@@ -76,7 +76,7 @@ main p {
 }
 
 aside {
-    display: none;
+    display: block;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -96,13 +96,39 @@ aside > div {
 
 }
 
-
 aside h1 {
     font-weight: bold;
     font-size: 1.5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.377);
     padding-bottom: 20px;
     margin: 0;
+}
+
+#lpizzas {
+    max-height: 10vh;
+    overflow-y: scroll;
+}
+
+#lpizzas > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.535);
+
+
+    
+}
+
+#lpizzas > div > div {
+    display: flex;
+    background-color: rgba(207, 206, 206, 0.839);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+#lpizzas > div > div > div {
+    margin: auto 10px auto 10px;
 }
 
 #conta {
@@ -116,10 +142,7 @@ aside h1 {
     justify-content: space-between;
     font-size: 1.5em;
     font-weight: bold;
-
-
 }
-
 
 
 aside button {
@@ -132,13 +155,7 @@ aside button {
     margin-left: 10%;
 }
 
-#lpizzas {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
-    padding: 10px;
 
-}
 
 #detpizza {
     display: none;
