@@ -1,14 +1,21 @@
 @charset "UTF-08";
 
 body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "nav nav"
+    "aside aside"
+    "main main"
+    ;
     position: relative;
     margin: 0px;
     background-color: rgb(250, 250, 250);
 }
 
 nav {
-    padding-top: 10px;
     grid-area: nav;
+    padding-top: 10px;
     margin: 0;
     background-color: black;
     height: 40px;
@@ -26,6 +33,7 @@ nav h1 {
 
 
 main {
+    grid-area: main;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -76,14 +84,11 @@ main p {
 }
 
 aside {
+    grid-area: aside;
     display: none;
-    position: fixed;
-    width: 80vw;
     height: 60vh;
     padding: 20px;
-    top: 10vh;
     background-color: aquamarine;
-    margin: 15vh auto auto auto;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.483);
 
 }
