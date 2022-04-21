@@ -38,17 +38,17 @@
                 </div>
             </div>
             
-            <div id="conta">
+            <div class="conta">
                 <p>Subtotal:</p>
                 <p id="subtotal">R$ 0.00</p>
             </div>
-            <div id="conta">
+            <div class="conta">
                 <p>Desconto (-10%)</p>
                 <p id="desconto"> R$ 0.000</p>
             </div>
             <div id="TotalDiv">
                 <p>Total</p>
-                <p>R$ 0.00</p>
+                <p id="ValorTotalAside">R$ 0.00</p>
             </div>
             <button>Finalizar a compra</button>
         </div>
@@ -70,7 +70,7 @@
                     <p id="detpizzapreco"> R$ 00.00</p>
                     <div>
                         <div value = 'nd' id="detpizzaprecoDivTP" onclick="tirarPizza(this.value)">-</div>
-                        <div id="detpizzasQuantidades">unid</div>
+                        <div id="detpizzasQuantidades">0</div>
                         <div value = 'nd' id="detpizzaprecoDivCP" onclick="colocarPizza(this.value)">+</div>
                     </div>
 
@@ -84,6 +84,8 @@
             
         </div>
     </article>
+
+    <img src="" alt="">
 
     <script src="ClassPizza.js"></script>
     <script src="layoutMain.js"></script>

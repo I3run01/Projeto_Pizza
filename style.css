@@ -109,6 +109,10 @@ aside h1 {
     overflow-y: scroll;
 }
 
+#lpizzas img {
+    width: 8vw;
+}
+
 #lpizzas > div {
     display: flex;
     justify-content: space-around;
@@ -132,7 +136,7 @@ aside h1 {
     cursor: pointer;
 }
 
-#conta {
+.conta {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.377);
