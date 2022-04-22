@@ -5,6 +5,7 @@ class Pizza {
         this.preco = preco
         this.foto = foto
         this.quantidade = 0
+        this.tamanho = null
 
     }
 

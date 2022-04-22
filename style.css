@@ -199,6 +199,7 @@ aside button {
 
 #DetPizzaDiv button:hover {
     background-color: aquamarine;
+    /*background-color: rgb(62, 242, 255);*/
 }
 
 #DetPizzaDivBTNT {
@@ -206,19 +207,19 @@ aside button {
     justify-content: center;
 }
 
-#btnt01 {
+.btnt01 {
     border-right: 0;
     border-radius: 20px 0 0 20px;
     margin: 0;
 }
 
-#btnt02 {
+.btnt02 {
     border-left: 0;
     border-right: 0;
     margin: 0;
 }
 
-#btnt03 {
+.btnt03 {
     border-left: 0;
     border-radius: 0 20px 20px 0; 
     margin: 0;
