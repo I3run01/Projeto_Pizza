@@ -11,7 +11,7 @@ function AsideFunction() {
                     <p>${i.nome}</p>
                     <div>
                         <div onclick="tirarPizzaAside(${cont})">-</div>
-                        <div id="btnAside">${i.quantidade}</div>
+                        <div class="btnAside">${i.quantidade}</div>
                         <div onclick="colocarPizzaAside(${cont})">+</div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ function CalculoAside() {
 function colocarPizzaAside(indice) {
     let obj = pizzas[indice]
     obj.AdicionarPizza()
-    document.querySelector('#btnAside').innerHTML = obj.quantidade
+    document.querySelectorAll('.btnAside')[indice].innerHTML = obj.quantidade
 
     CalculoAside()
 
@@ -49,7 +49,7 @@ function colocarPizzaAside(indice) {
 function tirarPizzaAside(indice) {
     let obj = pizzas[indice]
     obj.DiminuirPizza()
-    document.querySelector('#btnAside').innerHTML = obj.quantidade
+    document.querySelectorAll('.btnAside')[indice].innerHTML = obj.quantidade
 
     CalculoAside()
  
