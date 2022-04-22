@@ -166,16 +166,16 @@ aside button {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.278);
-    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.461);
+    font-size: 3vh;
 }
 
 #DetPizzaDiv {
     position: fixed;
-    height: 90vh;
+    min-height: 95vh;
     width: 80vw;
-    background-color: white;
-    top: 5vh;
+    background-color: rgb(210, 244, 255);
+    top: 2vh;
     left: 10vw;
     display: block;
     text-align: center;
@@ -192,12 +192,52 @@ aside button {
     margin: auto;
 }
 
+#DetPizzaDiv button {
+    height: 6vh;
+    cursor: pointer;
+}
+
+#DetPizzaDiv button:hover {
+    background-color: aquamarine;
+}
+
+#DetPizzaDivBTNT {
+    display: flex;
+    justify-content: center;
+}
+
+#btnt01 {
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+}
+
+#btnt02 {
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+}
+
+#btnt03 {
+    border-left: 0;
+    border-radius: 0 20px 20px 0; 
+    margin: 0;
+
+}
+
 #detpizzaprecoDiv {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
+
+.tam {
+    height: 5vh;
+    width: 30vw;
+    cursor: pointer;
+}
+
 
 #detpizzaprecoDiv > div {
     display: flex;
@@ -211,3 +251,4 @@ aside button {
 #detpizzaprecoDiv > div:hover {
     cursor: pointer;
 }
+
