@@ -8,19 +8,20 @@ function detpizza(indice) {
     document.querySelector('#detpizzaimg').src = obj.foto
     document.querySelector('#detpizzaDescricao').innerHTML = obj.descriao
     document.querySelector('#detpizzapreco').innerHTML = `R$ ${obj.preco}`
+    document.querySelector('.detpizzasQuantidades').innerHTML = obj.quantidade
 }
 
 function colocarPizza(indice) {
     let obj = pizzas[indice]
     obj.AdicionarPizza()
-    document.querySelector('#detpizzasQuantidades').innerHTML = obj.quantidade
+    document.querySelector('.detpizzasQuantidades').innerHTML = obj.quantidade
  
 }
 
 function tirarPizza(indice){
     let obj = pizzas[indice]
     obj.DiminuirPizza()
-    document.querySelector('#detpizzasQuantidades').innerHTML = obj.quantidade
+    document.querySelector('.detpizzasQuantidades').innerHTML = obj.quantidade
     
 }
 
