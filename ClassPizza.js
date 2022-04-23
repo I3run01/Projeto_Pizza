@@ -23,6 +23,7 @@ class Pizza {
 
 let pizzas = [
     new Pizza('Mussarela', 'la jcvaghc ghvadmnjh asgjhfvbajhfba kjahgjshagfui woytjksbfkj ujVDJA F', 20.99, 'imagens/pizza.png'),
-    new Pizza ('Calabresa', 'hsagfihdfb', 18.99, 'imagens/pizza2.png')
+    new Pizza ('Calabresa', 'hsagfihdfb', 18.99, 'imagens/pizza2.png'),
+    new Pizza ('Frango c/ catupiry', 'Pizza não tão gostosa', 14.99, 'imagens/pizza3.png')
 ]
 
