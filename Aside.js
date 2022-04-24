@@ -61,7 +61,7 @@ function AsideMenu() {
     if ( AsMenu.value == 'full') {
         var id = setInterval(frame02, 0.02)
         
-        let i = 50
+        let i = 60
         function frame02() {
             
             if (i <= 7) {
@@ -86,8 +86,8 @@ function AsideMenu() {
         let i = 5
         function frame() {
             
-            if (i >= 47) {
-                AsMenu.style.height = '50vh'
+            if (i >= 57) {
+                AsMenu.style.height = '60vh'
                 clearInterval(id)
             }
             
