@@ -51,9 +51,21 @@ function tirarPizzaAside(indice) {
     obj.DiminuirPizza()
     document.querySelectorAll('.btnAside')[indice].innerHTML = obj.quantidade
 
-    CalculoAside()
- 
+    CalculoAside() 
 }
 
+async function  AsideMenu() {
+
+    let AsMenu = document.querySelector('aside')
+     
+    if ( AsMenu.style.height == '5vh') {
+        AsMenu.style.height = '85vh'
+    }
+
+    else {
+        AsMenu.style.height = '5vh'
+    }
+    
+}
 
 

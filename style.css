@@ -86,15 +86,18 @@ main p {
 aside {
     grid-area: aside;
     display: none;
-    height: 90vh;
+    height: 5vh;
     padding: 20px;
     background-color: aquamarine;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.483);
+    overflow-y: hidden;
 
 }
 
 #AsideMenu {
-    height: 1.2vh;
+    margin: 0vh auto 2.5vh auto;
+    font-size: 2.5vh;
+    cursor: pointer;   
 }
 
 aside h1 {
