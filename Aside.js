@@ -54,16 +54,50 @@ function tirarPizzaAside(indice) {
     CalculoAside() 
 }
 
-async function  AsideMenu() {
+function AsideMenu() {
 
     let AsMenu = document.querySelector('aside')
-     
-    if ( AsMenu.style.height == '5vh') {
-        AsMenu.style.height = '85vh'
+    
+    if ( AsMenu.value == 'full') {
+        var id = setInterval(frame02, 0.02)
+        
+        let i = 50
+        function frame02() {
+            
+            if (i <= 7) {
+                AsMenu.style.height = '5vh'
+                clearInterval(id)
+            }
+            
+            else {
+                AsMenu.style.height = `${i}vh`
+                i -= 2
+            }
+        }
+
+        AsMenu.value = 'notfull'     
     }
 
     else {
-        AsMenu.style.height = '5vh'
+
+
+        var id = setInterval(frame, 0.02)
+        
+        let i = 5
+        function frame() {
+            
+            if (i >= 47) {
+                AsMenu.style.height = '50vh'
+                clearInterval(id)
+            }
+            
+            else {
+                AsMenu.style.height = `${i}vh`
+                i += 2
+            }
+        }
+
+        AsMenu.value = 'full'
     }
     
 }
