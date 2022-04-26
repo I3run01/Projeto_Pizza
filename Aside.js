@@ -11,7 +11,7 @@ function AsideFunction() {
                     <p>${i.nome}</p>
                     <div>
                         <div onclick="tirarPizzaAside(${cont})">-</div>
-                        <div class="btnAside">${i.quantidade}</div>
+                        <div class="btnAside${cont}">${i.quantidade}</div>
                         <div onclick="colocarPizzaAside(${cont})">+</div>
                     </div>
                 </div>
@@ -38,9 +38,10 @@ function CalculoAside() {
 function colocarPizzaAside(indice) {
     let obj = pizzas[indice]
     obj.AdicionarPizza()
-    document.querySelectorAll('.btnAside')[indice].innerHTML = obj.quantidade
+    document.querySelector(`.btnAside${indice}`).innerHTML = obj.quantidade
 
     CalculoAside()
+    AsideFunction()
 
     
    
@@ -49,9 +50,10 @@ function colocarPizzaAside(indice) {
 function tirarPizzaAside(indice) {
     let obj = pizzas[indice]
     obj.DiminuirPizza()
-    document.querySelectorAll('.btnAside')[indice].innerHTML = obj.quantidade
+    document.querySelector(`.btnAside${indice}`).innerHTML = obj.quantidade
 
     CalculoAside() 
+    AsideFunction()
 }
 
 function AsideMenu() {
@@ -61,7 +63,7 @@ function AsideMenu() {
     if ( AsMenu.value == 'full') {
         var id = setInterval(frame02, 0.02)
         
-        let i = 60
+        let i = 70
         function frame02() {
             
             if (i <= 7) {
@@ -86,8 +88,8 @@ function AsideMenu() {
         let i = 5
         function frame() {
             
-            if (i >= 57) {
-                AsMenu.style.height = '60vh'
+            if (i >= 67) {
+                AsMenu.style.height = '70vh'
                 clearInterval(id)
             }
             
