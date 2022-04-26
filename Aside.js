@@ -58,8 +58,7 @@ function tirarPizzaAside(indice) {
 
 function AsideMenu() {
 
-    let AsMenu = document.querySelector('aside')
-    
+    let AsMenu = document.querySelector('aside')    
     if ( AsMenu.value == 'full') {
         var id = setInterval(frame02, 0.02)
         
@@ -77,7 +76,7 @@ function AsideMenu() {
             }
         }
 
-        AsMenu.value = 'notfull'     
+        AsMenu.value = 'notfull'    
     }
 
     else {
