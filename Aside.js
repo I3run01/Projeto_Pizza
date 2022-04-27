@@ -124,7 +124,7 @@ function AsideMenuPC() {
             
             else {
                 body.style.gridTemplateColumns = `auto ${i}px`
-                i -= 10
+                i -= 6
             }
         }
 
@@ -146,7 +146,7 @@ function AsideMenuPC() {
             
             else {
                 body.style.gridTemplateColumns = `auto ${i}px`
-                i += 10
+                i += 6
             }
         }
 
