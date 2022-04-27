@@ -58,8 +58,9 @@ function tirarPizzaAside(indice) {
 
 function AsideMenu() {
 
-    let AsMenu = document.querySelector('aside')    
-    if ( AsMenu.value == 'full') {
+    let AsMenu = document.querySelector('aside')
+    let AsMenuMobile = document.querySelector('#AsideMenu')  
+    if ( AsMenuMobile.value == 'full') {
         var id = setInterval(frame02, 0.02)
         
         let i = 70
@@ -76,7 +77,7 @@ function AsideMenu() {
             }
         }
 
-        AsMenu.value = 'notfull'    
+        AsMenuMobile.value = 'notfull'    
     }
 
     else {
@@ -98,9 +99,58 @@ function AsideMenu() {
             }
         }
 
-        AsMenu.value = 'full'
+        AsMenuMobile.value = 'full'
     }
     
 }
 
 
+function AsideMenuPC() {
+    let AsMenu = document.querySelector('aside')
+    let AsMenuPC = document.querySelector('#AsideMenuPC')
+    let body = document.querySelector('body')
+    AsMenu.style.height = '550px'
+
+    if ( AsMenuPC.value == 'full') {
+        var id = setInterval(frame03, 0.02)
+        
+        let i = 450
+        function frame03() {
+            
+            if (i <= 67) {
+                body.style.gridTemplateColumns = 'auto 50px'
+                clearInterval(id)
+            }
+            
+            else {
+                body.style.gridTemplateColumns = `auto ${i}px`
+                i -= 5
+            }
+        }
+
+        AsMenuPC.value = 'notfull'
+        AsMenuPC.innerHTML = '&#x25C0'  
+    }
+
+    else {
+
+        var id = setInterval(frame04, 0.02)
+        
+        let i = 50
+        function frame04() {
+            
+            if (i >= 445) {
+                AsMenu.style.gridTemplateColumns = 'auto 450px'
+                clearInterval(id)
+            }
+            
+            else {
+                body.style.gridTemplateColumns = `auto ${i}px`
+                i += 5
+            }
+        }
+
+        AsMenuPC.value = 'full'
+        AsMenuPC.innerHTML = '&#x25B6'
+    }
+}

@@ -101,6 +101,10 @@ aside {
     cursor: pointer;   
 }
 
+#AsideMenuPC {
+    display: none;
+}
+
 aside h1 {
     font-weight: bold;
     font-size: 1.5em;
@@ -263,7 +267,7 @@ aside button {
 
 @media screen and (min-width: 900px) {
     body {
-        
+        grid-template-columns: auto 50px;
         grid-template-areas: 
         "nav nav"
         "main aside"
@@ -280,21 +284,44 @@ aside button {
     }
 
     aside {
-        height: 500px;
-        width: 300px;
+        height: 550px;
         margin-right: 0;
+        overflow-x: hidden;
     }
+
+    
 
     aside > div, aside > h1, aside > button {
         margin-left: 50px;
+    }
+
+    #AsideMenuPC {
+        margin: 0;
+    }
+
+    #AsideMenuPC:hover {
+        cursor: pointer;
     }
 
     #AsideMenu {
         display: none;
     }
 
+    #AsideMenuPC {
+        display: block;
+    }
+
+    #lpizzas > *{
+        padding: 10px;
+    }
+
+    #lpizzas img {
+        width: 50px;
+    }
+
     #detpizza {
         font-size: 1.2em;
+        margin-right: 0;
 
     }
 
@@ -305,7 +332,7 @@ aside button {
     }
 
     #DetPizzaDiv img {
-        width: 200px;
+        width: 250px;
     }
     
     #detpizzaprecoDiv {
@@ -324,6 +351,8 @@ aside button {
         width: 20px;
 
     }
+
+   
 
     
 }
