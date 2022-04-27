@@ -112,8 +112,8 @@ function AsideMenuPC() {
     AsMenu.style.height = '550px'
 
     if ( AsMenuPC.value == 'full') {
-        var id = setInterval(frame03, 0.02)
-        
+        var id = setInterval(frame03, 0.001)
+    
         let i = 450
         function frame03() {
             
@@ -124,7 +124,7 @@ function AsideMenuPC() {
             
             else {
                 body.style.gridTemplateColumns = `auto ${i}px`
-                i -= 5
+                i -= 10
             }
         }
 
@@ -134,7 +134,7 @@ function AsideMenuPC() {
 
     else {
 
-        var id = setInterval(frame04, 0.02)
+        var id = setInterval(frame04, 0.001)
         
         let i = 50
         function frame04() {
@@ -146,7 +146,7 @@ function AsideMenuPC() {
             
             else {
                 body.style.gridTemplateColumns = `auto ${i}px`
-                i += 5
+                i += 10
             }
         }
 
